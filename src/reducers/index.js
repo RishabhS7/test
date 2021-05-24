@@ -1,0 +1,46 @@
+import { combineReducers } from "redux";
+import {
+  fetchCategories,
+  fetchProjectList,
+  fetchDefiLendingList,
+  fetchWeb3Data,
+  fetchFearNGreedIndex,
+  fetchDuneAnalytics,
+  fetchUserBalances,
+  fetchMetamask,
+  fetchSelectedProjectDetails,
+  fetchProjectGraph,
+  fetchPriceTrendGraph,
+  fetchTweetAnalysis,
+  fetchDefiGraphData,
+  fetchThirdPartyDefiList,
+  getSocialData,
+  fetchAccessibility,
+  fetchNullStakingPool,
+  fetchMMWindowStatus,
+} from "./defi.reducer";
+import { fetchNFTContractInstance, fetchNetworkId } from "./web3.reducer";
+const rootReducer = combineReducers({
+  fetchNFTContractInstance,
+  fetchNetworkId,
+  fetchMMWindowStatus,
+  fetchNullStakingPool,
+  fetchAccessibility,
+  fetchCategories,
+  fetchProjectList,
+  fetchDefiLendingList,
+  fetchWeb3Data,
+  fetchFearNGreedIndex,
+  fetchDuneAnalytics,
+  fetchMetamask,
+  fetchUserBalances,
+  fetchSelectedProjectDetails,
+  fetchProjectGraph,
+  fetchPriceTrendGraph,
+  fetchTweetAnalysis,
+  fetchDefiGraphData,
+  fetchThirdPartyDefiList,
+  getSocialData,
+});
+
+export default rootReducer;
